@@ -1,4 +1,4 @@
-#Git命令
+t命令
 
 ###查看、添加、提交、删除、找回，重置修改文件
 
@@ -64,11 +64,12 @@ git log --stat #查看提交统计信息
 
 tig
 Mac上可以使用tig代替diff和log，brew install tig
+```
 
+#Git 本地分支管理
 
-Git 本地分支管理
-查看、切换、创建和删除分支
-
+###查看、切换、创建和删除分支
+```
 git br -r # 查看远程分支
 
 git br <new_branch> # 创建新的分支
@@ -93,7 +94,7 @@ git br -d <branch> # 删除某个分支
 
 git br -D <branch> # 强制删除某个分支 (未被合并的分支被删除的时候需要强制)
 ```
- ###分支合并和rebase
+###分支合并和rebase
 
 ```
 git merge <branch> # 将branch分支合并到当前分支
@@ -103,7 +104,7 @@ git merge origin/master --no-ff # 不要Fast-Foward合并，这样可以生成me
 git rebase master <branch> # 将master rebase到branch，相当于： git co <branch> && git rebase master && git co master && git merge <branch>
 
 ```
- ###Git补丁管理(方便在多台机器上开发同步时用)
+###Git补丁管理(方便在多台机器上开发同步时用)
 ```
 
 git diff > ../sync.patch # 生成补丁
@@ -113,8 +114,7 @@ git apply ../sync.patch # 打补丁
 git apply --check ../sync.patch #测试补丁能否成功
 
 ```
-
- ###Git暂存管理
+###Git暂存管理
 ```
 
 git stash # 暂存
