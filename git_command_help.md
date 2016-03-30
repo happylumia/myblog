@@ -1,4 +1,4 @@
-t命令
+#git命令
 
 ###查看、添加、提交、删除、找回，重置修改文件
 
@@ -62,8 +62,7 @@ git log -p -2 # 查看最近两次详细修改内容的diff
 
 git log --stat #查看提交统计信息
 
-tig
-Mac上可以使用tig代替diff和log，brew install tig
+tig #Mac上可以使用tig代替diff和log，brew install tig
 ```
 
 #Git 本地分支管理
