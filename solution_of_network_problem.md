@@ -62,7 +62,7 @@
 
    1. 检查系统防火墙iptalbes的状态
 
-   ```#iptables -L -n
+  ``` 
    #iptables -L -n
    #iptables -A INPUT -i eth0 -p tcp --dport 80 -j ACCEPT
    #iptables -A OUTPUT -p tcp --sport 80 -m state --state ESTABLISED -j ACCEPT
